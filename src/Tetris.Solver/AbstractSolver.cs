@@ -23,8 +23,9 @@ using System;
 using System.Web;
 using System.Linq;
 using System.Text;
+using TetrisClient;
 
-namespace TetrisClient
+namespace Tetris.Solver
 {
 	public abstract class AbstractSolver
 	{

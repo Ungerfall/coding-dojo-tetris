@@ -1,4 +1,4 @@
-/*-
+﻿/*-
  * #%L
  * Codenjoy - it's a dojo-like platform from developers to developers.
  * %%
@@ -19,14 +19,15 @@
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
 using System;
 using System.Threading;
 
-namespace TetrisClient
+namespace Tetris.CLI
 {
 	class Program
 	{
-		static string ServerUrl = "http://localhost:8080/codenjoy-contest/board/player/ziwpjz46y4z5567k7uup?code=3867579515136108220&gameName=tetris";
+		static string ServerUrl = "http://codingdojo2020.westeurope.cloudapp.azure.com:8010/codenjoy-contest/board/player/pt85z5raa4qbtjc5q6sv?code=3829236068182366586&gameName=tetris";
 
 		// you can get this code after registration on the server with your email
 		// http://server-ip:8080/codenjoy-contest/board/player/your@email.com?code=12345678901234567890
@@ -37,7 +38,7 @@ namespace TetrisClient
 
 			// creating custom Minesweeper's Ai client
 			
-			var tetrisPlayer = new YourSolver(ServerUrl);
+			var tetrisPlayer = new Solver.Solver(ServerUrl);
 
 			// starting thread with playing Minesweeper
 			Thread thread = new Thread(tetrisPlayer.Play);
