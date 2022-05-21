@@ -10,7 +10,7 @@ namespace Tetris.Solver
 
 		protected internal override Command Get(Board gameBoard)
 		{
-			return Command.MoveTo(Direction.Left);
+			return Command.MoveTo(Direction.Down);
 		}
 	}
 }
